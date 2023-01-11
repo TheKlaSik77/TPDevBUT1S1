@@ -1,5 +1,6 @@
 // La classe ArrayList ne fait pas partie des classes disponibles par défaut en Java.
 // Il faut indiquer au compilateur où la trouver (dans le package java.util).
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 // C'est la même chose pour la classe Scanner qui se trouve aussi dans le package java.util.
@@ -65,7 +66,22 @@ public class ExempleUtilisationArrayList {
             }
             System.out.println();
         }
+        afficherListe(noms);
+
         sc.close();
+    }
+
+    public static void afficherListe(ArrayList<String> liste){
+
+        System.out.println("Syntax 1");
+        for (int i = 0 ; i < liste.size() ; i++){
+            System.out.println(liste.get(i));
+        }
+        System.out.println("---------------------\nSyntax 2\n---------------------");
+
+        for (String nom : liste){
+            System.out.println(nom);
+        }
     }
 }
 

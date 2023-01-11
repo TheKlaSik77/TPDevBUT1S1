@@ -1,0 +1,13 @@
+ex: (zone,saisie, resultat attendu)
+
+(<0, -5, "Erreur âge incorrect")
+(0,0,"0.25€") habite a montreuil = 30% de 0.25
+(<3,2,"0.25€")
+(=3,3,"0.25€")
+(<20,17,"0.80€") habite a montreuil = 30% de 0.80
+(=20,20,"1.20€")
+(<65,47,"1.20€") habite a montreuil = 30% de 1.20
+(=65,65,"0.80")
+(<=122,111,"0.80")
+(>122, 145,"Erreur âge incorrect")
+
